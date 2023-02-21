@@ -6,13 +6,60 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Header & Footer */ 
+
 .header, .footer {
     display: flex;
     align-items: center;
     width: 100%;
     height: 7%;
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 
 }
+.header  {
+
+    font-size: 35px;
+    margin-top: 50px;
+    border-top: 3px solid black;
+}
+
+.headerlogo{
+    
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+.headerlinks{
+    
+    margin-left: auto;
+    padding-right: 50px;
+    font-weight: 500;
+}
+
+.hlink {
+    margin-right: 30px;
+}
+
+.h1 {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Sections */ 
+
+.sec1, .section2 {
+    width: 100%;
+    min-height:22.5%;
+}
+
+.sec1 {
+    padding-top: 3%;
+    width: 80%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 8%;
+}
+
