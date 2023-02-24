@@ -27,6 +27,16 @@ img {
     object-fit: scale-down; max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #f8b45b;
+}
+
+a:hover {
+    color: #8d71db; 
+    transition: 0.7s;
+}
+
 /* Header & Footer */ 
 
 .header, .footer {
@@ -51,6 +61,12 @@ img {
     font-size: 35px;
     font-weight: 700;
     padding-left: 50px;
+}
+
+.logoimg {
+    padding-top: 20px;
+    height:75px;
+    width: 75px;
 }
 
 .headerlinks{
@@ -139,13 +155,15 @@ p.s1para {
 
 .flink{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #f8b45b;
     padding: 5px;
 }
 
 /* Mobile Stylings*/ 
 
 @media (max-width: 900px) {
+
+    /*Header*/
 
     .header  {
         
@@ -177,5 +195,34 @@ p.s1para {
         font-size: 10%;
     }
 
+    /*Section 2*/
 
+    .sec2{
+        width: 80%;
+       
+    }
+    
+    .boxcont {
+        padding:0;
+    }
+    .boximg {
+        
+        height: 250px;
+        width: 750px;
+        top:-50px; 
+        left:-35px; 
+        display:block; 
+        z-index:999; 
+        cursor: pointer; 
+        -webkit-transition-property: all; 
+        -webkit-transition-duration: 0.3s; 
+        -webkit-transition-timing-function: ease; 
+    
+        object-fit: scale-down; max-width: 100%;
+        
+    }
+    .boximg:hover { 
+        transform: scale(1.1); 
+    }
+    
 }
