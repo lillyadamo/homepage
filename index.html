@@ -1,86 +1,67 @@
-<!--Code written by Lilly Adamo-->
+<!-- Code written by Lilly Adamo -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>lilly adamo</title>
-
+  <title>lilly adamo</title>
 </head>
 <body>
-    <header>
-        
-            <h1 class="header-title">L I L L Y</h1>
-            <nav class="header-nav">
-                <a class="header-link" href="art.html">Art</a>
-                <a class="header-link" href="photography.html">Photography</a>
-                <a class="header-link" href="projects.html">Projects</a>
-                <a class="header-link" href="contact.html">Contact</a>
-            </nav>
-    </header>
-    <hr>
-    <section>
-        <container>
-        <h1 class = "section-title">about me</h1>
-        <p>Welcome to my website. My name is Lilly Adamo. I am currently enrolled
-            in the Application Development and Delivery program at Red River Polytechnic.
-            I have always had an interest and passion for computers from a young age, almost
-            immediately becoming the designated tech support for my family. I would usually work
-            on call, getting my Mom to drive me to my grandma's house whenever there was something 
-            <em>urgently wrong</em> with her computer, like the volume not working. She was always so 
-            impressed with my skills! Then as payment I would accept nothing less than a cup of espresso
-            with milk and a biscotti.<br>
-            Much of my childhood was spent modding my gaming systems so I could get new Mario Kart Wii tracks,
-            or different games for my DS and 3DS. When I wasn't console gaming, I was playing on a Minecraft
-            Server I had created and port-forwarded myself to play with my friends. (It was the latest and greatest,
-            I had been the first of my friends to make a server anyone could join without the use of 3rd party programs!)<br>
-            I will also never forget that in the 6th grade I was able to do a project on whatever I wanted,
-            and I decided to do mine on computer viruses.<br>
-            Despite all of this, I decided that Psychiatric Nursing was the career path I wanted to pursue. As 
-            you can imagine, that didn't last long.<br>
-            After much contemplation, a few tough decisions, and an even tougher conversation with my parents,
-            I decided that computer science was ultimately the path I wanted to take. Though, I know my credentials
-            as "Family Tech-Support" were not going to cut it.<br>
-            I decided to return to school and I could not be happier with the decision I made. I am currently in term 
-            two of five at Red River and I have already learned so much and am so excited to continue my learning journey.
-            <br>
-            Aside from all the tech stuff, I am a hobbyist photographer, and I also enjoy drawing and sketching. I own 
-            quite a few cameras, both film and digital. My two favourites that I own are my Ricoh GR IIIx. I take it
-            everywhere with me and its perfect for taking candid photos. My favourite film camera I own is my Olympus XA.
-            I appreciate how small and compact it is, and it has a really unique design as well. <br>
-            As for drawing, some of my more professional work is completed with charcoal on paper, which is my 
-            favourite medium to work with. I do carry a sketchbook around with me and tend to doodle when I'm bored.
-            And I also enjoy using Procreate on my iPad. I've had many welcome opportunities to complete commissions
-            for people, both in my personal life as well as individuals who have seen my work online. I am grateful
-            for every interaction I've had and nothing makes me happier to deliver a piece to someone who is 
-            thoroughly happy with the final product.<br>
-            My hobbies are all things that I consider to be lifelong journeys for me and I hope to constantly improve 
-            my skills so I can keep creating work that forever increases in quality!           
-        </p>
-        <p>
-            I hope you enjoyed reading a little bit about me. Let's connect on linkedin, and if you have any questions
-            or would like to commission a piece from me, please feel free to 
-            <a href="mailto:lillyadamo@outlook.com">send me an email.</a>
-        </p>
-        </container>
-    </section>
-    <footer>
-        <a class = "footer-link", href = "https://www.linkedin.com/in/lilliana-adamo-9782a224b/">linkedin</a>
-        <a class = "footer-link", href = "https://github.com/ladamo-rrc">github</a>
-        <a class = "footer-link", href = "#">instagram</a>
-    </footer>
+  <header>
+    <h1 class="header-title">L I L L Y</h1>
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+    <nav class="header-nav">
+      <button class="close-btn" id="close-btn" aria-label="Close navigation">✕</button>
+     <a class="header-link" href="https://www.linkedin.com/in/lilliana-adamo-9782a224b/" target="blank">linkedin</a>
+      <a class="header-link" href="https://github.com/ladamo-rrc" target="blank">github</a>
+      <a class="header-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <section>
+    <h1 class="section-title">welcome</h1>
+    <p> my name is lilly. I'm currently studying application development and delivery at 
+        Red River Polytechnic. This is a website showcasing some of my work. <br>
+        I enjoy photography, art, and coding.
+    </p>
+    <div class="photo-album">
+      <a class="photo-item" href="art.html">
+        <img src="img/placeholders/knight-armor.png" alt="Art Preview" />
+        <span class="photo-label">art</span>
+      </a>   
+      <a class="photo-item" href="photography.html"> 
+        <img src="img/placeholders/photo-1.jpg" alt="Photography Preview" />
+        <span class="photo-label">photography</span>
+      </a>
+      <a class="photo-item" href="projects.html"> 
+        <img src="img/placeholders/coding.png" alt="Projects Preview" />
+        <span class="photo-label">projects</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 lilly adamo</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,132 +1,389 @@
 /* Global Styles */
 * {
-    font-family: 'Crimson Text', serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text', serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 10vh;
-    overflow-x: hidden;
-    animation: fadeInAnimation ease 1s;
-    animation-fill-mode: forwards;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  overflow-x: hidden;
+  animation: fadeInAnimation ease 1s forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 img {
-    object-fit: scale-down;
-    max-width: 100%;
+  object-fit: scale-down;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: #f85b82;
+  text-decoration: none;
+  color: #7a87fd;
+  transition: color 0.7s;
 }
 
 a:hover {
-    color: #f09348; 
-    transition: 0.7s;
-} 
+  color: #7a87fd;
+}
 
-/* Header Styles */
-
+/* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers header content */
-    width: 60%; /* Matches section width */
-    margin: 0 auto; /* Centers the header */
-    height: 7vh;
-    background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  height: 7vh;
+  background-color: #ffffff;
 }
 
-/* Adjust spacing between title and nav */
 h1.header-title {
-    font-size: 1.5em;
-    margin-right: 20px; 
-    white-space: nowrap;
-    padding-right: 1em;
+  font-size: 1.5em;
+  margin-right: 20px;
+  padding-right: 1em;
+  white-space: nowrap;
 }
 
-/* Ensure navigation links have spacing but stay close to title */
 nav.header-nav {
-    display: flex;
-    gap: 15px; /* Keeps space between links */
+  display: flex;
+  gap: 15px;
 }
 
 a.header-link {
-    color: black;
-    font-size: 1.1em; 
-    transition: color 0.3s;
-    text-transform: uppercase;
+  color: black;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 a.header-link:hover {
-    color: #f09348;
+  color: #7a87fd;
 }
 
+/* Divider */
 hr {
-    width: 75%;
-    height: 2px; /* `size` is not a valid CSS property; use `height` */
-    background-color: black; /* Set the color */
-    border: none; /* Removes default border */
-    margin: 10px auto; /* Centers it horizontally */
-}
-/* Section */
-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%; /* Reduced width */
-    margin: 5vh auto 0 auto; /* Added top margin to lower it from the header */
-    padding: 20px;
+  width: 75%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 10px auto;
 }
 
-h1.section-title{
-    padding-bottom: 1em;
+/* Main Section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 5vh auto 0;
+  padding: 20px;
+}
+
+section p {
+  text-align: center;
+  max-width: 800px;  
+  margin: 0 auto;   
+}
+
+h1.section-title {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+/* Photo Album */
+.photo-album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  place-items: center;       
+  max-width: 1000px;         
+  margin: 0 auto;            
+  width: 100%;               
+}
+/* Standard size for image links */
+.photo-item {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+}
+
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+}
+
+.photo-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4em;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+/* Optional: hover effect */
+.photo-item img:hover {
+  transform: scale(1.05);
 }
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    height: 7vh;
-    background-color: #ffffff;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 7vh;
+  background-color: #ffffff;
+  padding: 10px 0;
 }
 
 .footer-link {
-    font-size: 1.1em;
-    padding: 5px;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+/* ART PORTFOLIO GRID */
+.art-album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  place-items: center;
+}
+
+.art-item {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.art-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.art-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Label styling */
+.art-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0; 
+  animation: fadeIn 0.5s forwards; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  padding-top: 15px;
+  max-width: 700px;
+}
+
+#caption {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.5s forwards; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+}
+
+/* Active hamburger fade-in (when mobile menu is active) */
+.hamburger.active {
+  display: flex;
+  animation: fadeIn 0.5s forwards;
+}
+
+.hamburger.inactive {
+  display: none;
+  animation: fadeOut 0.5s forwards;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 1em;
+  }
+
+  h1.header-title {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.header-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    display: none; 
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav.header-nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  section {
+    width: 100%;
+    padding: 10px;
+    align-items: center; 
+  }
+
+  .photo-album {
+    grid-template-columns: 1fr; 
+    justify-items: center;    
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .photo-item {
+    width: 90%;         
+}
+
 }
 
 
-/* Style the photo album container */
-.photo-album {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    justify-items: center;
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
   }
-  
-  /* Style each photo item and add hover effect */
-  .photo-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .photo-item img:hover {
-    transform: scale(1.05);
-  }
+}
