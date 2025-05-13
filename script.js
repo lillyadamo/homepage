@@ -41,4 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     };
   }
+
+  // devlog
+  const devlogContainer = document.getElementById("devlog-content");
+  if (devlogContainer) {
+    loadMarkdown("may-13-2025.md");
+  }
 });
+
+async function loadMarkdown(filename) {
+  try {
+    const res = await fetch(`devlog/${filename}`);
+    if (!res.ok) throw new Error("Fetch failed");
+    const text = await res.text();
+    const html = marked.parse(text);
+    document.getElementById("devlog-content").innerHTML = html;
+  } catch (err) {
+    console.error("Markdown load error:", err);
+    document.getElementById("devlog-content").innerHTML = "<p>Could not load devlog.</p>";
+  }
+}
