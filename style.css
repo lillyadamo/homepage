@@ -286,7 +286,6 @@ footer {
   border: none;
   cursor: pointer;
   padding: 0;
-  opacity: 0; /* Initially hidden */
   animation: fadeIn 0.5s forwards; /* Add fade-in animation */
 }
 
@@ -315,7 +314,7 @@ footer {
   border-radius: 2px;
 }
 
-/* Active hamburger fade-in (when mobile menu is active) */
+
 .hamburger.active {
   display: flex;
   animation: fadeIn 0.5s forwards;
@@ -333,6 +332,10 @@ footer {
     justify-content: space-between;
     width: 90%;
     padding: 0 1em;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   h1.header-title {
