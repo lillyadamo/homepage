@@ -21,10 +21,11 @@ function Home() {
           <img src="/img/placeholders/coding.png" alt="Projects Preview" />
           <span className="photo-label">projects</span>
         </Link>
-        <Link className="photo-item" to="/devlog">
+        /* secret link */
+        {/* <Link className="photo-item" to="/devlog">
           <img src="/img/placeholders/spongebob.jpg" alt="Devlog Preview" />
           <span className="photo-label">devlog</span>
-        </Link>
+        </Link> */}
       </div>
     </section>
   )
