@@ -61,11 +61,12 @@ a.header-link {
   color: black;
   font-size: 1.1em;
   text-transform: uppercase;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s ease;
 }
 
 a.header-link:hover {
   color: #7a87fd;
+  transform: scale(1.1);
 }
 
 /* Divider */
