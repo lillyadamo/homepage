@@ -271,6 +271,17 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+/*email contact link */
+.contact-link {
+  text-align: center;
+  color: #7a87fd;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+}
 
 /* devlog */
 
