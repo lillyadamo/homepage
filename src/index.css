@@ -34,6 +34,7 @@ a:hover {
   color: #7a87fd;
 }
 
+
 /* Header */
 header {
   display: flex;
@@ -91,7 +92,7 @@ section {
 section p {
   text-align: center;
   max-width: 800px;  
-  margin: 0 auto;   
+  margin: 0 auto 20px auto;
 }
 
 h1.section-title {
