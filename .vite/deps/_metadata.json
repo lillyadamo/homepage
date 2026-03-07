@@ -1,8 +1,46 @@
 {
-  "hash": "9eb909c9",
+  "hash": "d41e31f4",
   "configHash": "9337c55b",
-  "lockfileHash": "9c61f4fc",
-  "browserHash": "2e8ef999",
-  "optimized": {},
-  "chunks": {}
+  "lockfileHash": "bbdf243a",
+  "browserHash": "321cc19e",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "40c2e249",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c14d1381",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "d5520cac",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "1f791fb3",
+      "needsInterop": false
+    },
+    "react-photo-album": {
+      "src": "../../node_modules/react-photo-album/dist/index.js",
+      "file": "react-photo-album.js",
+      "fileHash": "b7abbcc4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NOSD3EBE": {
+      "file": "chunk-NOSD3EBE.js"
+    },
+    "chunk-G4V7ITBN": {
+      "file": "chunk-G4V7ITBN.js"
+    }
+  }
 }
