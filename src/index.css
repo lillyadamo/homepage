@@ -219,6 +219,27 @@ footer {
   border-radius: 5px;
   font-size: 1.2em;
 }
+/* Project grid styling*/
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.project-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 /* Modal Styling */
 .modal {
