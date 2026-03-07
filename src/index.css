@@ -6,6 +6,10 @@
   font-family: 'Crimson Text', serif;
 }
 
+#root {
+  animation: fadeInAnimation ease 0.5s forwards;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -392,6 +396,7 @@ footer {
     width: 100%;
     padding: 10px;
     align-items: center; 
+   
   }
 
   .photo-album {
