@@ -1,7 +1,7 @@
 import ImageGrid from "../components/common/gallery/PhotoGrid";
 
 const photographs = [
-    {src: "img/photography/espresso-at-nonnas.jpg", alt: "espresso at nonnas"}, 
+    {src: "img/photography/espresso-at-nonnas.jpg", alt: "espresso at nonnas", width: 6000, height: 4000}, 
 ]
 
 function Photography() {

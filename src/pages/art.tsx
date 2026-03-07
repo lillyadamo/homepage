@@ -9,7 +9,7 @@ const artImages = [
     { src: "/img/art/pastel-sky-landscape.png", alt: "pastel sky landscape", width: 2048, height: 2502 },
     { src: "/img/art/pinterest-guy.png", alt: "pinterst guy", width: 2228, height: 2048 },
     { src: "/img/art/seeing-stars.png", alt: "seeing stars", width: 2048, height: 2048 },
-    { src: "/img/art/yhorm.png", alt: "yhorm", width: 2048, height: 1423 },
+    { src: "/img/art/yhorm.jpg", alt: "yhorm", width: 2048, height: 1423 },
 ]
 
 function Art() {

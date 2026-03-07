@@ -99,6 +99,15 @@ h1.section-title {
 }
 
 /* Photo Album */
+
+.react-photo-album--photo {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.react-photo-album--photo:hover {
+  transform: scale(1.05);
+}
 .photo-album {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
