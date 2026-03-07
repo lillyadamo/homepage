@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+
 function Home() {
   return (
     <section>
@@ -21,7 +22,7 @@ function Home() {
           <img src="/img/placeholders/coding.png" alt="Projects Preview" />
           <span className="photo-label">projects</span>
         </Link>
-        /* secret link */
+        
         {/* <Link className="photo-item" to="/devlog">
           <img src="/img/placeholders/spongebob.jpg" alt="Devlog Preview" />
           <span className="photo-label">devlog</span>
