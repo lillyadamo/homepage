@@ -6,6 +6,7 @@ import Art from './pages/art'
 import Photography from './pages/photography'
 import Contact from './pages/contact'
 import Projects from './pages/projects'
+import About from './pages/about'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/photography" element={<Photography/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
       <Footer />
     </div>
