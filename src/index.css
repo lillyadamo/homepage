@@ -83,7 +83,7 @@ hr {
   margin: 10px auto;
 }
 
-/* Main Section */
+/* Main Sections */
 section {
   display: flex;
   flex-direction: column;
@@ -91,6 +91,8 @@ section {
   width: 60%;
   margin: 5vh auto 0;
   padding: 20px;
+  opacity: 0;
+  animation: fadeInAnimation ease 0.5s forwards;
 }
 
 section p {
@@ -109,9 +111,6 @@ h1.section-title {
 .react-photo-album--photo {
   transition: transform 0.3s ease;
   cursor: pointer;
-  min-height: 200px;
-  background: red;
-
 }
 
 .react-photo-album--photo:hover {
@@ -411,6 +410,8 @@ footer {
 
   nav.header-nav.active {
     display: flex;
+    opacity: 0;
+    animation: fadeInAnimation 0.3s ease forwards;
   }
 
   .hamburger {
