@@ -26,6 +26,7 @@ function Header(){
             }>✕</button>
             <a className="header-link" href="https://www.linkedin.com/in/lilliana-adamo-9782a224b/">linkedin</a>
             <a className="header-link" href="https://github.com/ladamo-rrc">github</a>
+            <Link to="/about" className="header-link">About Me</Link>
             <Link to="/contact" className="header-link">Contact</Link>
             {location.pathname !== "/" && (
             <Link to="/" className="header-link">home</Link>

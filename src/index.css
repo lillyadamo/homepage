@@ -324,6 +324,10 @@ footer {
   font-size: 1.1rem;
 }
 
+.about-section {
+  max-width: 600px;
+}
+
 /* Hamburger button (hidden on desktop) */
 .hamburger {
   display: none;
