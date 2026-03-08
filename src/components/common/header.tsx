@@ -1,10 +1,14 @@
 // Header component for the application
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useLocation, Link } from "react-router-dom"
 
 function Header(){
     const [isNavOpen, setIsNavOpen] = useState(false)
     const location = useLocation()
+
+    useEffect(() => {
+        setIsNavOpen(false)
+    }, [location.pathname])
 
     return(
         <header>
@@ -22,7 +26,7 @@ function Header(){
             }>✕</button>
             <a className="header-link" href="https://www.linkedin.com/in/lilliana-adamo-9782a224b/">linkedin</a>
             <a className="header-link" href="https://github.com/ladamo-rrc">github</a>
-            <a className="header-link" href="/contact">Contact</a>
+            <Link to="/contact" className="header-link">Contact</Link>
             {location.pathname !== "/" && (
             <Link to="/" className="header-link">home</Link>
 )}
