@@ -108,14 +108,6 @@ h1.section-title {
 
 /* Photo Album */
 
-.react-photo-album--photo {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.react-photo-album--photo:hover {
-  transform: scale(1.05);
-}
 .photo-album {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -461,3 +453,39 @@ footer {
   }
 }
 
+/*masonry stylings*/
+.masonry-grid {
+  columns: 3;
+  gap: 15px;
+  padding: 20px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .masonry-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 1;
+  }
+}
