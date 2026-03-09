@@ -21,15 +21,16 @@ function ImageGrid({ images }:PhotoGridProps){
     return (
       <div style={{ width: "100%", minWidth: "100px" }}>
         <PhotoAlbum
-          layout="masonry"
-          photos={images}
-          columns={(containerWidth) => {
-            if (containerWidth < 400) return 1
-            if (containerWidth < 768) return 2
-            return 3
-          }}
-          onClick={({ photo }: { photo: Photo }) => setSelectedImage(photo.src)}
-        />
+            layout="masonry"
+            photos={images}
+            columns={(containerWidth) => {
+              if (containerWidth < 400) return 1
+              if (containerWidth < 768) return 2
+              return 3
+            }}
+            defaultContainerWidth={300}
+            onClick={({ photo }: { photo: Photo }) => setSelectedImage(photo.src)}
+          />
         {selectedImage && (
           <div className="modal" onClick={() => setSelectedImage(null)}>
             <span className="close">×</span>
