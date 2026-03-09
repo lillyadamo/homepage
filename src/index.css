@@ -232,7 +232,16 @@ footer {
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px; 
+}
+
+.project-paragraph {
+  text-align: left;
+  margin: 0;
+}
+
+.project-list {
+  text-align: left;
 }
 
 /* Modal Styling */
