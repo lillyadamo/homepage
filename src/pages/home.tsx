@@ -5,9 +5,9 @@ function Home() {
   return (
     <section>
       <h1 className='section-title'>welcome</h1>
-      <p>my name is lilly. I'm currently studying application development and delivery at 
-        Red River Polytechnic. This is a website showcasing some of my work. 
-        I enjoy photography, art, and coding.
+      <p>My name is Lilly. I graduated with a diploma in Application Development and Delivery, and I have
+        an interest in web development, photography, and art. 
+        This website is a collection of my projects, creative work, and professional experience. 
       </p>
       <div className='photo-album'>
         <Link className="photo-item" to="/art">
