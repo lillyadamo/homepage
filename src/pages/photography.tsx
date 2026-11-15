@@ -11,6 +11,7 @@ const photographs = [
     {src: "img/photography/s2000.jpg", alt: "honda s2000", width: 3024, height: 4000},
     {src: "img/photography/lights.jpg", alt: "lights", width: 3612, height: 1451}, 
     {src: "img/photography/roses.jpg", alt: "roses", width: 4000, height: 6000}, 
+    {src: "img/photography/poster.jpg", alt: "poster", width: 6000, height: 4000}, 
     {src: "img/photography/cake.jpg", alt: "cake", width: 5152, height: 3864}, 
 
 ]
